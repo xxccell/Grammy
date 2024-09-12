@@ -17,12 +17,14 @@ def LLM_Response(question):
 
 def convert_recipe_to_grams(recipe):
     prompt = f"""
-    Convert the following recipe measurements from cups to grams:
+    Convert the following recipe measurements from cups to grams and also millilitres to grams:
 
     {recipe}
 
     Assume standard ingredient densities unless otherwise specified.
+    Make sure liquids are also given in grams. 
     After converting the ingredients, provide the complete recipe, including the directions.
+    If no directions or instructions are given, do not generate any directions or instructions.
     """
     result = LLM_Response(prompt)
 
