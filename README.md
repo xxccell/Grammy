@@ -15,7 +15,7 @@ Use this for recipes that gives ingredients in cups instead of grams. Avoid havi
 
 **Use Grammy Now!**
 
-➡️ [Grammy](grammy.streamlit.app)
+➡️ [Grammy](https://grammy.streamlit.app)
 
 
 
