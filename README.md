@@ -22,4 +22,38 @@ Use this for recipes that gives ingredients in cups instead of grams. Avoid havi
       
 **Note:** Grammy assumes standard ingredient densities unless otherwise specified in the recipe.
 
+---
+
+## Running Grammy locally with Docker
+
+To run the Grammy app on your local machine using Docker, follow these steps:
+
+### Prerequisites
+
+- Ensure you have Docker installed on your machine. You can download it from [here](https://www.docker.com/products/docker-desktop).
+
+### Steps to Run
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/grammy-repo.git
+    cd grammy-repo
+    ```
+
+2. **Build the Docker Image**:
+    Run the following command to build the Docker image for the app:
+    ```bash
+    docker build -t grammy-app .
+    ```
+
+3. **Run the Docker Container**:
+    After the build is complete, you can run the Docker container:
+    ```bash
+    docker run -p 8501:8501 --env GEMINI_API_KEY=your_api_key grammy-app
+    ```
+
+    - Replace `your_api_key` with your actual Gemini API key.
+    - The app will now be accessible at `http://localhost:8501` in your browser.
+
+**Note:** The `GEMINI_API_KEY` can either be passed in the `docker run` command as shown above or set up in your environment as a variable. If no key is provided, the app will prompt users to enter their API key upon launching.
 
