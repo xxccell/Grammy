@@ -36,7 +36,7 @@ To run the Grammy app on your local machine using Docker, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/grammy-repo.git
+    git clone https://github.com/xxccell/Grammy.git
     cd grammy-repo
     ```
 
